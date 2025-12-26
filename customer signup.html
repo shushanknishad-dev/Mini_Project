@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('sliced-carrots-bowl-vegetables-towel-blue-table (1).jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1877F2;
+      margin-bottom: 15px;
+    }
+
+    label {
+      margin-top: 10px;
+      display: block;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background: #1877F2;
+      color: white;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: #0f5ac9;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="customer signup.php" method="POST" class="login-box">
+    <h2>Create Account</h2>
+
+    <label>Name</label>
+    <input type="text" name="username" required>
+
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Mobile</label>
+    <input type="number" name="mobile" required>
+
+    <label>Password</label>
+    <input type="password" name ="password" required >
+
+   
+
+    <input type="submit" value="Sign up">
+    <p>Already have an Account?<a href="customer login.html">Log in</a></p>
+  </form>
+
+</body>
+
+</html>

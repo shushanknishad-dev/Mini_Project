@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Portal</title>
+  <style>
+
+    body {
+      font-family: " sans-serif";  
+      background-color: #f5f6fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .payment-container {
+      background:white;
+      padding: 30px;
+      border-radius: 15px;
+      border: 2px solid #1877F2;
+      text-align: center;
+      width: 400px;
+    }
+
+    h1 {
+      color: #1877F2;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #1877F2;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+
+   
+
+    a.upi-link:hover {
+      background: #1256b8;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+ 
+      color: #1877F2;
+      text-decoration: none;
+     
+      padding: 8px 16px;
+    
+    
+    }
+    .submit{
+      background: #1877F2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="number"] {
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Payment Portal</h1>
+
+    <img src="Qr code.jpg" alt="QR Code">
+
+    <p>Scan the QR code above to complete your payment.</p>
+
+    <a class="7985519163-2@ibl" href="">
+      7985519163-2@ibl
+    </a>
+    <br><br>
+<form action="payment.php" method="post">
+    <input type="number" name="amount" placeholder="Enter Amount" required>
+    <br>
+    <br>
+    <input class="submit" type="submit" value="Pay Now">
+    </form>
+
+
+    <br>
+    <a class="back-btn" href="customer dashboard.php">⬅ Back to Dashboard</a>
+  </div>
+</body>
+</html>
